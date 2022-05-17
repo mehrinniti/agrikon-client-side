@@ -38,7 +38,8 @@ const SignUp = () => {
                 // setUser(result.user);
 
                 //  save user to the database
-                saveUser(email, user.displayName, 'PUT');
+                // saveUser(email, user.displayName, 'PUT');
+                saveSocialUser(result.user.email, result.user.displayName, 'PUT');
                 console.log(saveUser);
                 history.push(redirect_uri);
 
@@ -77,6 +78,7 @@ const SignUp = () => {
     const handleGithubSignIn = () => {
         signInUsingGithub()
             .then(result => {
+                saveSocialUser(result.user.email, result.user.displayName, 'PUT');
                 history.push(redirect_uri);
 
                 swal({
@@ -101,6 +103,7 @@ const SignUp = () => {
     const handleFacebookSignIn = () => {
         signInUsingFacebook()
             .then(result => {
+                saveSocialUser(result.user.email, result.user.displayName, 'PUT');
                 history.push(redirect_uri);
 
                 swal({
@@ -120,6 +123,25 @@ const SignUp = () => {
             })
             .finally(() => setIsLoading(false));
     }
+
+
+
+
+    const saveSocialUser = (userEmail, displayName, method) => {
+        const user = { userEmail, displayName };
+        console.log('displayName : ', displayName);
+        console.log('userEmail : ', userEmail);
+        fetch('http://localhost:5000/users', {
+            method: method,
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then()
+    }
+
+
 
     // email & password
     const handleSignUp = e => {

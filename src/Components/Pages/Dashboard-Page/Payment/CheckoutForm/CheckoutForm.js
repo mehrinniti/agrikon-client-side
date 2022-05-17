@@ -2,6 +2,7 @@ import { CircularProgress, Button } from '@mui/material';
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 import swal from 'sweetalert';
 import useAuth from '../../../../../hooks/useAuth';
@@ -9,7 +10,7 @@ import useAuth from '../../../../../hooks/useAuth';
 
 const CheckoutForm = ({ orderPayment }) => {
 
-    const { productPrice, productName, _id, userEmail } = orderPayment;
+    const { productPrice, productName, _id, userEmail, paymentStatus } = orderPayment;
 
 
     // console.log('payment id ', _id)
@@ -152,9 +153,119 @@ const CheckoutForm = ({ orderPayment }) => {
         }
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // const { orderId } = useParams();
+    // const [checkPayment, setCheckPayment] = useState({});
+    // useEffect(() => {
+    //     fetch(`http://localhost:5000/payment/${orderId}`)
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log('payment data', data);
+    //             setCheckPayment(data);
+    //         });
+    // }, [orderId])
+
+
+    // const handlePaymentStatus = (id) => {
+
+
+    //     if (paymentStatus === "Paid") {
+    //         swal({
+    //             title: "Hey, Already Paid",
+    //             icon: "info",
+    //         });
+    //         // history.push(redirectUrl);
+    //         return;
+    //     }
+
+
+    //     checkPayment.status = "Paid";
+    //     setCheckPayment(checkPayment);
+
+    //     // console.log('all order check', allOrder);
+    //     // console.log('set all order check', setAllOrder);
+
+
+
+    //     // const proceed = window.confirm('Are you sure, you want to approve?')
+
+
+    //     // if (proceed) {
+    //     // const url = `http://localhost:5000/allOrders/${id}`;
+    //     // fetch(url, {
+    //     //     method: 'PUT'
+    //     // })
+    //     //     .then(res => res.json())
+    //     //     .then(result => {
+    //     //         if (result.data?.modifiedCount > 0) {
+    //     //             swal({
+    //     //                 title: "Successfully Approved!",
+    //     //                 icon: "success",
+    //     //             });
+    //     //             const remaining = allOrder.filter(allProduct => allProduct._id !== id)
+    //     //             setAllOrder(remaining);
+    //     //         }
+    //     //     });
+
+    //     axios
+    //         .put(
+    //             `http://localhost:5000/paymentUpdate/${id}`,
+    //             checkPayment
+    //         )
+    //         .then((result) => {
+    //             // if (result.data?.modifiedCount > 0) {
+    //             //     swal({
+    //             //         title: "Order successfully approved!",
+    //             //         icon: "success",
+    //             //     });
+    //             //     // history.push(redirectUrl);
+    //             // }
+    //         });
+
+
+    //     // };
+
+    // };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return (
         <div>
             <form className="checkout-form" onSubmit={handleSubmit}>
+                {/* <form className="checkout-form" onSubmit={handleSubmit} onClick={handlePaymentStatus}> */}
                 <CardElement
                     className="card-element"
                     options={{

@@ -101,6 +101,7 @@ const Order = () => {
 
 
         data.status = "pending";
+        data.paymentStatus = "pending";
         data.image = orderData?.image;
         // data.img = `${image}`;
         data.userImg = user?.photoURL;

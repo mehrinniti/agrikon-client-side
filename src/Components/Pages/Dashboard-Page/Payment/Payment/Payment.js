@@ -23,7 +23,10 @@ const Payment = () => {
     useEffect(() => {
         fetch(`http://localhost:5000/payment/${orderId}`)
             .then(res => res.json())
-            .then(date => setOrderPayment(date));
+            .then(data => {
+                console.log('payment data', data);
+                setOrderPayment(data);
+            });
     }, [orderId])
 
     // useEffect(() => {

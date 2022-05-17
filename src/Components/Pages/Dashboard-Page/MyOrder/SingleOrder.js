@@ -7,7 +7,7 @@ import './SingleOrder.css';
 const SingleOrder = ({ order, hanldeDelete }) => {
     // const { _id, name, image, date, status } = order;
 
-    const { _id, userName, userEmail, userImg, productImage, name, productName, date, productPrice, productWeight, status, image } = order;
+    const { _id, userName, userEmail, userImg, productImage, name, productName, date, productPrice, productWeight, status, image, paymentStatus } = order;
     const { user } = useAuth();
     // const { user, isPaid } = useAuth();
 
@@ -151,7 +151,7 @@ const SingleOrder = ({ order, hanldeDelete }) => {
                         </p>
                         <p>
                             Payment Status:{" "}
-                            {/* {paymentStatus === "Paid" && (
+                            {paymentStatus === "Paid" && (
                                 <span className="mx-2">
                                     <i className="fas fa-sack-dollar"></i>
                                 </span>
@@ -161,7 +161,7 @@ const SingleOrder = ({ order, hanldeDelete }) => {
                                     <i className="fas fa-stream"></i>
                                 </span>
                             )}
-                            <b>{paymentStatus}</b> */}
+                            <b>{paymentStatus}</b>
                         </p>
                         <p>
                             Order date:
