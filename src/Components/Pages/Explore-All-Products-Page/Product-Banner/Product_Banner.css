@@ -1,0 +1,207 @@
+.product-banner-section {
+    margin: 0px !important;
+    padding: 0px !important;
+    background-image: linear-gradient(#02ff7062, #00a84964), url(../../../../images/bg_01.jpg);
+}
+
+.product-banner-text {
+    font-size: 33px !important;
+    font-weight: 600;
+    font-family: cursive;
+    color: #16b157;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* text-align: left; */
+}
+
+.product-img-container img {
+    margin-top: 30px;
+    /* width: 0px !important; */
+}
+
+.offer-img {
+    width: 25%;
+    height: 25%;
+    margin-left: -120px;
+    margin-top: 15px !important;
+    animation: rotate infinite 10s linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+
+/* --------------- Mobile responsive --------------- */
+
+/* Small Mobile  */
+@media (max-width: 320px) {
+    .product-banner-section {
+        /* margin: 0px !important; */
+        /* padding: 0px !important; */
+        /* width: 10px; */
+        /* background-image: linear-gradient(#02ff7062, #00a84964), url(../../../../images/bg_01.jpg); */
+    }
+
+    .vegitable-img {
+        width: 203px;
+    }
+
+    .product-img-container img {
+        /* width: 0px; */
+        margin-right: 0px !important;
+    }
+
+    .product-banner-text {
+        font-size: 15px !important;
+        font-weight: 600;
+        font-family: cursive;
+        color: #16b157;
+        margin: auto;
+        /* text-align: left; */
+        margin: 24px 0px 0px;
+    }
+
+    .offer-img {
+        width: 27%;
+        height: 27%;
+        margin-left: -55px;
+        margin-top: -20px;
+        animation: rotate infinite 10s linear;
+    }
+}
+
+/* Normal Mobile  */
+@media (min-width: 321px) {
+    .product-banner-text {
+        font-size: 19px !important;
+        margin-top: 24px;
+    }
+
+    .vegitable-img {
+        width: 345px;
+    }
+
+    .offer-img {
+        width: 27%;
+        height: 27%;
+        margin-left: -90px;
+        margin-top: -20px;
+        animation: rotate infinite 10s linear;
+    }
+}
+
+@media (min-width: 380px) {
+    .product-banner-text {
+        font-size: 21px !important;
+    }
+
+    .vegitable-img {
+        width: 345px;
+    }
+}
+
+
+@media (min-width: 400px) {
+    .menu {
+        /* color: brown; 	OPTIONAL*/
+    }
+}
+
+
+/* --------------- Tablet responsive --------------- */
+
+/* Tab  */
+@media (min-width: 481px) {
+    .product-banner-text {
+        font-size: 24px !important;
+    }
+
+    .vegitable-img {
+        width: 475px;
+    }
+
+    .offer-img {
+        width: 25%;
+        height: 25%;
+        margin-left: -100px;
+        margin-top: -20px;
+        animation: rotate infinite 10s linear;
+    }
+}
+
+/* Netbooks / iPad  */
+@media (min-width: 768px) {
+    .product-banner-text {
+        font-size: 25px !important;
+        margin: auto;
+    }
+
+    .vegitable-img {
+        width: 355px;
+    }
+
+    .offer-img {
+        width: 25%;
+        height: 25%;
+        margin-left: -100px;
+        margin-top: -20px;
+        animation: rotate infinite 10s linear;
+    }
+}
+
+
+@media (min-width: 912px) {
+    .menu {
+        /* color: rgb(255, 73, 246); */
+    }
+}
+
+
+/* --------------- Desktop responsive --------------- */
+
+@media (min-width: 1024px) {
+    .product-banner-text {
+        font-size: 28px !important;
+        font-weight: 600;
+        font-family: cursive;
+        color: #16b157;
+        margin-top: auto;
+        margin-bottom: auto;
+        /* text-align: left; */
+    }
+
+    .vegitable-img {
+        width: 405px;
+    }
+
+    .offer-img {
+        width: 25%;
+        height: 25%;
+        margin-left: -90px;
+        margin-top: 15px !important;
+        animation: rotate infinite 10s linear;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vegitable-img {
+        width: 435px;
+    }
+
+    .offer-img {
+        width: 25%;
+        height: 25%;
+        margin-left: -50px;
+        margin-top: 15px !important;
+        animation: rotate infinite 10s linear;
+    }
+}

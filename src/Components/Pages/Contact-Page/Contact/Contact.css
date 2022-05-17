@@ -1,0 +1,24 @@
+.contact-section {
+    margin-top: 80px;
+}
+
+.left-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.896), rgba(0, 0, 0, 0.896)), url(../../../../images/contact.jpg);
+    background-size: cover;
+}
+
+.contact-info {
+    /* margin: auto;
+    padding: auto; */
+    padding: 200px 50px;
+    /* padding-top: 50px; */
+}
+
+.contact-info p span {
+    color: #00a848;
+}
+
+/* .contact-date TextField { */
+/* border: 0px solid rgb(206, 34, 34) !important;
+    color: red !important;
+} */

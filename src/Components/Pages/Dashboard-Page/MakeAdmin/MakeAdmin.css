@@ -1,0 +1,64 @@
+.adminBtn:hover {
+    background-color: #008336 !important;
+}
+
+.error {
+    color: red;
+}
+
+
+
+
+
+/* --------------- Mobile responsive --------------- */
+
+/* Small Mobile  */
+@media (max-width: 320px) {
+    .adminBtn {
+        margin-bottom: 60px !important;
+    }
+}
+
+/* Normal Mobile  */
+@media (min-width: 321px) {
+    .adminBtn {
+        margin-bottom: 210px !important;
+    }
+}
+
+@media (min-width: 380px) {
+    .adminBtn {
+        margin-bottom: 393px !important;
+    }
+}
+
+
+@media (min-width: 400px) {
+    .adminBtn {
+        margin-bottom: 457px !important;
+    }
+}
+
+
+/* --------------- Tablet responsive --------------- */
+
+/* Tab  */
+@media (min-width: 481px) {
+    .adminBtn {
+        margin-bottom: 261px !important;
+    }
+}
+
+/* --------------- Desktop responsive --------------- */
+
+@media (min-width: 1024px) {
+    .adminBtn {
+        margin-bottom: 457px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .adminBtn {
+        margin-bottom: 192px !important;
+    }
+}

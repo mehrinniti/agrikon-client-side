@@ -1,0 +1,11 @@
+.products-card:hover {
+    color: #eb9800;
+}
+
+.purchase-btn {
+    text-decoration: none;
+}
+
+.Purchase-icon {
+    margin-right: 10px;
+}

@@ -1,0 +1,17 @@
+/* --------------- Mobile responsive --------------- */
+
+/* Small Mobile  */
+@media (max-width: 320px) {
+    .addFarmer-btn {
+        /* margin-bottom: 170px; */
+
+    }
+}
+
+/* --------------- Desktop responsive --------------- */
+
+@media (min-width: 1200px) {
+    .addFarmer-btn {
+        margin-bottom: 68px !important;
+    }
+}
