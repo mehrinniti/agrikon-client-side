@@ -33,10 +33,11 @@ const Signin = () => {
             .then(result => {
                 console.log('google user details ', result.user);
                 // setUser(result.user);
+                console.log('email', result.user.email);
 
                 //  save user to the database
                 // saveUser(email, user.displayName, 'PUT');
-                saveSocialUser(email, user.displayName, 'PUT');
+                saveSocialUser(result.user.email, result.user.displayName, 'PUT');
 
                 history.push(redirect_uri);
 
@@ -59,25 +60,12 @@ const Signin = () => {
             .finally(() => setIsLoading(false));
     }
 
-
-    const saveSocialUser = (userEmail, displayName, method) => {
-        const user = { userEmail, displayName };
-        console.log('displayName : ', displayName);
-        fetch('http://localhost:5000/users', {
-            method: method,
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(user)
-        })
-            .then()
-    }
-
     // github redirect
     const handleGithubSignIn = () => {
         signInUsingGithub()
             .then(result => {
                 console.log('GitHub user details ', result.user);
+                saveSocialUser(result.user.email, result.user.displayName, 'PUT');
                 history.push(redirect_uri);
 
                 swal({
@@ -102,6 +90,7 @@ const Signin = () => {
     const handleFacebookSignIn = () => {
         signInUsingFacebook()
             .then(result => {
+                saveSocialUser(result.user.email, result.user.displayName, 'PUT');
                 history.push(redirect_uri);
                 console.log(result.user);
                 console.log('Facebook user details ', result.user);
@@ -123,6 +112,23 @@ const Signin = () => {
             })
             .finally(() => setIsLoading(false));
     }
+
+
+
+    const saveSocialUser = (userEmail, displayName, method) => {
+        const user = { userEmail, displayName };
+        console.log('displayName : ', displayName);
+        console.log('userEmail : ', userEmail);
+        fetch('http://localhost:5000/users', {
+            method: method,
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then()
+    }
+
 
     // Email sign in
     const handleSignIn = e => {
