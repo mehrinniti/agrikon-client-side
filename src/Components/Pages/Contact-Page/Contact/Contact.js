@@ -78,7 +78,7 @@ const Contact = () => {
                             <div className="contact-info text-start text-white">
                                 <p><i className="fas fa-map-marker-alt pe-3"></i>Address <br /> <span className='ms-4 ps-1'>Green Road, Panthapath</span> <br /><span className='ms-4 ps-1'>Dhaka, Bangladesh</span> </p><br />
                                 <p><i className="fas fa-phone-square pe-3"></i>Lets Talk <br /> <span className='ms-4 ps-1'>666 888 0000</span></p><br />
-                                <p><i className="fas fa-envelope pe-3"></i>General Support <br /> <span className='ms-4 ps-1'>agrikon@company.com</span></p>
+                                <p><i className="fas fa-envelope pe-3"></i>General Support <br /> <span className='ms-4 ps-1'>agrikon.company@gmail.com</span></p>
                             </div>
                         </div>
                         <div className="col-md-8">

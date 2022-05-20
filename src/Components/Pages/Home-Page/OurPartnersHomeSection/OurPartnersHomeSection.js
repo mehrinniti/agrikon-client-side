@@ -32,16 +32,16 @@ const OurPartnersHomeSection = () => {
                         <div className="container">
                             <div className="row align-items-start">
                                 <div className="col partners">
-                                    <a target="_blank" href="https://oreo-health-care.web.app/"><img src={partner1} alt="" /></a>
+                                    <a target="_blank" href="http://agrikon-agricultural-website.netlify.app/"><img src={partner1} alt="" /></a>
                                 </div>
                                 <div className="col partners">
-                                    <a target="_blank" href="https://oreo-health-care.web.app/"><img src={partner2} alt="" /></a>
+                                    <a target="_blank" href="http://agrikon-agricultural-website.netlify.app/"><img src={partner2} alt="" /></a>
                                 </div>
                                 <div className="col partners">
-                                    <a target="_blank" href="https://oreo-health-care.web.app/"><img src={partner3} alt="" /></a>
+                                    <a target="_blank" href="http://agrikon-agricultural-website.netlify.app/"><img src={partner3} alt="" /></a>
                                 </div>
                                 <div className="col partners">
-                                    <a target="_blank" href="https://oreo-health-care.web.app/"><img src={partner4} alt="" /></a>
+                                    <a target="_blank" href="http://agrikon-agricultural-website.netlify.app/"><img src={partner4} alt="" /></a>
                                 </div>
                             </div>
 
@@ -56,16 +56,16 @@ const OurPartnersHomeSection = () => {
                         <div className="container">
                             <div className="row align-items-start">
                                 <div className="col partners">
-                                    <a target="_blank" href="https://oreo-health-care.web.app/"><img src={partner5} alt="" /></a>
+                                    <a target="_blank" href="http://agrikon-agricultural-website.netlify.app/"><img src={partner5} alt="" /></a>
                                 </div>
                                 <div className="col partners">
-                                    <a target="_blank" href="https://oreo-health-care.web.app/"><img src={partner4} alt="" /></a>
+                                    <a target="_blank" href="http://agrikon-agricultural-website.netlify.app/"><img src={partner4} alt="" /></a>
                                 </div>
                                 <div className="col partners">
-                                    <a target="_blank" href="https://oreo-health-care.web.app/"><img src={partner1} alt="" /></a>
+                                    <a target="_blank" href="http://agrikon-agricultural-website.netlify.app/"><img src={partner1} alt="" /></a>
                                 </div>
                                 <div className="col partners">
-                                    <a target="_blank" href="https://oreo-health-care.web.app/"><img src={partner3} alt="" /></a>
+                                    <a target="_blank" href="http://agrikon-agricultural-website.netlify.app/"><img src={partner3} alt="" /></a>
                                 </div>
                             </div>
 

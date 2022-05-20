@@ -83,7 +83,7 @@ function Dashboard(props) {
             {!admin && !isLoading && <Box>
 
                 <NavLink to={`${url}/myOrders`} className="dashboard-btns-link" activeClassName="selected selected-dashboard-link"><Button className="dashboard-btns" sx={{ color: "black" }} variant="text">My Orders</Button></NavLink>
-                <NavLink to={`${url}/singlePayment`} className="dashboard-btns-link" activeClassName="selected selected-dashboard-link"><Button className="dashboard-btns" sx={{ color: "black" }} variant="text">Pay</Button></NavLink>
+                {/* <NavLink to={`${url}/singlePayment`} className="dashboard-btns-link" activeClassName="selected selected-dashboard-link"><Button className="dashboard-btns" sx={{ color: "black" }} variant="text">Pay</Button></NavLink> */}
 
                 <NavLink to={`${url}/review`} className="dashboard-btns-link" activeClassName="selected selected-dashboard-link"><Button className="dashboard-btns" sx={{ color: "black" }} variant="text">Review</Button></NavLink>
 

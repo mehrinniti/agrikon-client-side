@@ -110,7 +110,7 @@ const SingleOrder = ({ order, hanldeDelete }) => {
                             <p>{productWeight}</p>
                             <p>৳ {productPrice}</p>
                             {/* <h5>{userName}</h5> */}
-                            <p>{userEmail}</p>
+                            {/* <p>{userEmail}</p> */}
                             {/* <img src={user.photoURL} className="order-user-img w-10" alt="" /> */}
                         </div>
                     </div>
@@ -149,7 +149,7 @@ const SingleOrder = ({ order, hanldeDelete }) => {
                             )}
                             <b>{status}</b>
                         </p>
-                        <p>
+                        {/* <p>
                             Payment Status:{" "}
                             {paymentStatus === "Paid" && (
                                 <span className="mx-2">
@@ -162,7 +162,7 @@ const SingleOrder = ({ order, hanldeDelete }) => {
                                 </span>
                             )}
                             <b>{paymentStatus}</b>
-                        </p>
+                        </p> */}
                         <p>
                             Order date:
                             <b> {date}</b>

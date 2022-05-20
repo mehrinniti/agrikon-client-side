@@ -34,7 +34,7 @@ const Footer = () => {
                         <div>
                             <p>
                                 <i className="fas fa-phone-square"></i><a target="_blank" href="tel:666-888-0000">666 888 0000</a><br />
-                                <i className="fas fa-envelope"></i><a target="_blank" href="mailto:agrikon@company.com">agrikon@company.com</a><br />
+                                <i className="fas fa-envelope"></i><a target="_blank" href="mailto:agrikon.company@gmail.com">agrikon.company@gmail.com</a><br />
                                 <i className="fas fa-map-marker-alt"></i><a href="#">Green Road, Panthapath <br /><span className='ms-4 ps-2'>Dhaka, Bangladesh</span> </a>
                             </p>
                         </div>
