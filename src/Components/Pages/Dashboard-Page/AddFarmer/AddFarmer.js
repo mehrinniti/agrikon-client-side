@@ -13,7 +13,7 @@ const AddFarmer = () => {
 
     const { register, handleSubmit, reset, formState: { errors }, } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/farmers', data)
+        axios.post('https://dry-earth-68796.herokuapp.com/farmers', data)
             .then(res => {
                 // console.log(res);
                 if (res.data?.insertedId) {

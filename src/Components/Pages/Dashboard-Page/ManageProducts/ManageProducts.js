@@ -11,7 +11,7 @@ const ManageProducts = () => {
 
     const [allProducts, setAllProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://dry-earth-68796.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setAllProducts(data))
     }, []);
@@ -21,7 +21,7 @@ const ManageProducts = () => {
 
 
         if (proceed) {
-            const url = `http://localhost:5000/products/${id}`;
+            const url = `https://dry-earth-68796.herokuapp.com/products/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

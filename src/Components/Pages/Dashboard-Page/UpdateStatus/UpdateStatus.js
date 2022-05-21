@@ -22,8 +22,8 @@ const UpdateStatus = () => {
     useEffect(() => {
         // setIsLoading(true);
 
-        fetch(`http://localhost:5000/allOrders/${id}`)
-            // fetch(`http://localhost:5000/orders/${id}`)
+        fetch(`https://dry-earth-68796.herokuapp.com/allOrders/${id}`)
+            // fetch(`https://dry-earth-68796.herokuapp.com/orders/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setAllOrder(data);
@@ -58,7 +58,7 @@ const UpdateStatus = () => {
 
 
         if (proceed) {
-            // const url = `http://localhost:5000/allOrders/${id}`;
+            // const url = `https://dry-earth-68796.herokuapp.com/allOrders/${id}`;
             // fetch(url, {
             //     method: 'PUT'
             // })
@@ -76,7 +76,7 @@ const UpdateStatus = () => {
 
             axios
                 .put(
-                    `http://localhost:5000/allOrders/${id}`,
+                    `https://dry-earth-68796.herokuapp.com/allOrders/${id}`,
                     allOrder
                 )
                 .then((result) => {
@@ -102,7 +102,7 @@ const UpdateStatus = () => {
         //             onClick: () => {
         //                 axios
         //                     .put(
-        //                         `http://localhost:5000/allOrders/${id}`,
+        //                         `https://dry-earth-68796.herokuapp.com/allOrders/${id}`,
         //                         allOrder
         //                     )
         //                     .then((result) => {
@@ -157,8 +157,8 @@ const UpdateStatus = () => {
         //             onClick: () => {
         //                 axios
         //                     .put(
-        //                         `http://localhost:5000/allOrders/${id}`,
-        //                         // `http://localhost:5000/orders/${id}`,
+        //                         `https://dry-earth-68796.herokuapp.com/allOrders/${id}`,
+        //                         // `https://dry-earth-68796.herokuapp.com/orders/${id}`,
         //                         allOrder
         //                     )
         //                     .then((result) => {
@@ -189,7 +189,7 @@ const UpdateStatus = () => {
 
             axios
                 .put(
-                    `http://localhost:5000/allOrders/${id}`,
+                    `https://dry-earth-68796.herokuapp.com/allOrders/${id}`,
                     allOrder
                 )
                 .then((result) => {

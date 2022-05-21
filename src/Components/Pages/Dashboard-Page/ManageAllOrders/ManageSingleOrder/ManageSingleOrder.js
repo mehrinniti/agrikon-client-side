@@ -30,7 +30,7 @@ const ManageSingleOrder = ({ allOrder, hanldeDelete }) => {
     // // load data
     // useEffect(() => {
     //     // setIsLoading(true);
-    //     fetch(`http://localhost:5000/products/${id}`)
+    //     fetch(`https://dry-earth-68796.herokuapp.com/products/${id}`)
     //         .then((res) => res.json())
     //         .then((data) => {
     //             setOrderData(data);

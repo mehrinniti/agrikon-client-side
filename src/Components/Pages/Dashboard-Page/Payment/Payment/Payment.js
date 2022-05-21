@@ -21,7 +21,7 @@ const Payment = () => {
     const { orderId } = useParams();
     const [orderPayment, setOrderPayment] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/payment/${orderId}`)
+        fetch(`https://dry-earth-68796.herokuapp.com/payment/${orderId}`)
             .then(res => res.json())
             .then(data => {
                 console.log('payment data', data);
@@ -31,7 +31,7 @@ const Payment = () => {
 
     // useEffect(() => {
     //     axios
-    //         .get(`http://localhost:5000/allOrders/${orderId}`)
+    //         .get(`https://dry-earth-68796.herokuapp.com/allOrders/${orderId}`)
     //         .then((result) => setOrderPayment(result.data));
     // }, [orderId]);
 

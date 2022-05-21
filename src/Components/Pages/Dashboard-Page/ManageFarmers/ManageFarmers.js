@@ -10,7 +10,7 @@ const ManageFarmers = () => {
 
     const [allFarmers, setAllFarmers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/farmers')
+        fetch('https://dry-earth-68796.herokuapp.com/farmers')
             .then(res => res.json())
             .then(data => setAllFarmers(data))
     }, []);
@@ -20,7 +20,7 @@ const ManageFarmers = () => {
 
 
         if (proceed) {
-            const url = `http://localhost:5000/farmers/${id}`;
+            const url = `https://dry-earth-68796.herokuapp.com/farmers/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

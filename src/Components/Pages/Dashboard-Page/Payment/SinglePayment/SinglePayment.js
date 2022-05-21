@@ -37,7 +37,7 @@ const SinglePayment = () => {
         axios({
             method: "get",
             // url: `https://afternoon-tor-94038.herokuapp.com/orders?email=${user?.email}`,
-            url: `http://localhost:5000/orders?email=${user.email}`,
+            url: `https://dry-earth-68796.herokuapp.com/orders?email=${user.email}`,
             headers: {
                 'authorization': `Bearer ${token}`,
             },

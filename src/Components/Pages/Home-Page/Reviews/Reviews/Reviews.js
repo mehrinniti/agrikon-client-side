@@ -35,7 +35,7 @@ const Reviews = () => {
     useEffect(() => {
         setIsLoading(true);
         axios
-            .get("http://localhost:5000/reviews")
+            .get("https://dry-earth-68796.herokuapp.com/reviews")
             .then((result) => {
                 setClientReviews(result.data);
                 setIsLoading(false);

@@ -37,7 +37,7 @@ const GiveReview = () => {
     const onSubmit = (data) => {
         data.rating = star;
         axios
-            .post("http://localhost:5000/reviews", data)
+            .post("https://dry-earth-68796.herokuapp.com/reviews", data)
             .then((result) => {
                 console.log(result);
                 if (result.data?.insertedId) {

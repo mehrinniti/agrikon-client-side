@@ -30,7 +30,7 @@ const CheckoutForm = ({ orderPayment }) => {
     const [processing, setProcessing] = useState(false);
     const [clientSecret, setClientSecret] = useState('');
     useEffect(() => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://dry-earth-68796.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -124,7 +124,7 @@ const CheckoutForm = ({ orderPayment }) => {
                 transaction: paymentIntent.client_secret.slice('_secret')[0]
             }
 
-            // const url = `http://localhost:5000/orders/${_id}`;
+            // const url = `https://dry-earth-68796.herokuapp.com/orders/${_id}`;
             // fetch(url, {
             //     method: 'PUT',
             //     headers: {
@@ -141,7 +141,7 @@ const CheckoutForm = ({ orderPayment }) => {
 
             axios
                 .put(
-                    `http://localhost:5000/payment/${_id}`,
+                    `https://dry-earth-68796.herokuapp.com/payment/${_id}`,
                     payment
                 )
                 .then((result) => {
@@ -171,7 +171,7 @@ const CheckoutForm = ({ orderPayment }) => {
     // const { orderId } = useParams();
     // const [checkPayment, setCheckPayment] = useState({});
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/payment/${orderId}`)
+    //     fetch(`https://dry-earth-68796.herokuapp.com/payment/${orderId}`)
     //         .then(res => res.json())
     //         .then(data => {
     //             console.log('payment data', data);
@@ -205,7 +205,7 @@ const CheckoutForm = ({ orderPayment }) => {
 
 
     //     // if (proceed) {
-    //     // const url = `http://localhost:5000/allOrders/${id}`;
+    //     // const url = `https://dry-earth-68796.herokuapp.com/allOrders/${id}`;
     //     // fetch(url, {
     //     //     method: 'PUT'
     //     // })
@@ -223,7 +223,7 @@ const CheckoutForm = ({ orderPayment }) => {
 
     //     axios
     //         .put(
-    //             `http://localhost:5000/paymentUpdate/${id}`,
+    //             `https://dry-earth-68796.herokuapp.com/paymentUpdate/${id}`,
     //             checkPayment
     //         )
     //         .then((result) => {

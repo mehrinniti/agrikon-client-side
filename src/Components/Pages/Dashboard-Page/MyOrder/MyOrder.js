@@ -23,10 +23,10 @@ const MyOrder = () => {
 
     useEffect(() => {
         //  Email er url eta dite hobe
-        const url = `http://localhost:5000/orders?email=${user.email}`
+        const url = `https://dry-earth-68796.herokuapp.com/orders?email=${user.email}`
         // console.log(user.email)
         //  Manage all order
-        // const url = `http://localhost:5000/orders`
+        // const url = `https://dry-earth-68796.herokuapp.com/orders`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -46,7 +46,7 @@ const MyOrder = () => {
         //             label: "Yes",
         //             onClick: () => {
         //                 axios
-        //                     .delete(`http://localhost:5000/orders/${id}`)
+        //                     .delete(`https://dry-earth-68796.herokuapp.com/orders/${id}`)
         //                     .then((result) => {
         //                         if (result.data.deletedCount > 0) {
         //                             const remaining = orders.filter((event) => event._id !== id);
@@ -74,7 +74,7 @@ const MyOrder = () => {
 
 
         if (proceed) {
-            // const url = `http://localhost:5000/orders/${id}`;
+            // const url = `https://dry-earth-68796.herokuapp.com/orders/${id}`;
             // fetch(url, {
             //     method: 'DELETE'
             // })
@@ -92,7 +92,7 @@ const MyOrder = () => {
 
 
             axios
-                .delete(`http://localhost:5000/orders/${id}`)
+                .delete(`https://dry-earth-68796.herokuapp.com/orders/${id}`)
                 .then((result) => {
                     if (result.data.deletedCount > 0) {
                         const remaining = orders.filter((event) => event._id !== id);

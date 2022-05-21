@@ -19,10 +19,10 @@ const Our_Farmers = () => {
     useEffect(() => {
         setIsLoading(true);
         //  Email er url eta dite hobe
-        // const url = `http://localhost:5000/orders?email=${user.email}&date=${date}`
-        // const url = `http://localhost:5000/products`
+        // const url = `https://dry-earth-68796.herokuapp.com/orders?email=${user.email}&date=${date}`
+        // const url = `https://dry-earth-68796.herokuapp.com/products`
 
-        fetch('http://localhost:5000/farmers')
+        fetch('https://dry-earth-68796.herokuapp.com/farmers')
             .then(res => res.json())
             .then(data => {
                 setAllFarmers(data);

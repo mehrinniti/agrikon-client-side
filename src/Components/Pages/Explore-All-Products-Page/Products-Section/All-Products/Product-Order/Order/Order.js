@@ -52,7 +52,7 @@ const Order = () => {
     // load data
     useEffect(() => {
         // setIsLoading(true);
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://dry-earth-68796.herokuapp.com/products/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setOrderData(data);
@@ -106,7 +106,7 @@ const Order = () => {
         // data.img = `${image}`;
         data.userImg = user?.photoURL;
         axios
-            .post("http://localhost:5000/orders", data)
+            .post("https://dry-earth-68796.herokuapp.com/orders", data)
             .then((result) => {
                 if (result?.data?.insertedId) {
                     swal({
@@ -120,7 +120,7 @@ const Order = () => {
 
 
         //  send to the server
-        // fetch('http://localhost:5000/orders', {
+        // fetch('https://dry-earth-68796.herokuapp.com/orders', {
         //     method: 'POST',
         //     headers: {
         //         'content-type': 'application.json'

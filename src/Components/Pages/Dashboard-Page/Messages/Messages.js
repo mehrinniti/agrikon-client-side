@@ -14,7 +14,7 @@ const Messages = () => {
     useEffect(() => {
         setIsLoading(true);
         axios
-            .get("http://localhost:5000/messages")
+            .get("https://dry-earth-68796.herokuapp.com/messages")
             .then((result) => {
                 setClientMessages(result.data);
                 setIsLoading(false);

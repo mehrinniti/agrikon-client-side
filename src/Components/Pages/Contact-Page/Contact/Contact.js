@@ -45,7 +45,7 @@ const Contact = () => {
     const onSubmit = (data) => {
         // data.rating = star;
         // axios
-        //     .post("http://localhost:5000/reviews", data)
+        //     .post("https://dry-earth-68796.herokuapp.com/reviews", data)
         //     .then((result) => {
         //         if (result.data?.insertedId) {
         //             swal("Thanks for your review!  🥰");
@@ -53,7 +53,7 @@ const Contact = () => {
         //         }
         //     });
         console.log('contact us ', data)
-        axios.post("http://localhost:5000/messages", data)
+        axios.post("https://dry-earth-68796.herokuapp.com/messages", data)
             .then(result => {
                 if (result.data?.insertedId) {
                     swal({

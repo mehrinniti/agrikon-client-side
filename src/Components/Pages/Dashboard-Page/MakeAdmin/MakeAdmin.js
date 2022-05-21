@@ -33,7 +33,7 @@ const MakeAdmin = () => {
     const onSubmit = (data) => {
         axios({
             method: "put",
-            url: "http://localhost:5000/users/admin",
+            url: "https://dry-earth-68796.herokuapp.com/users/admin",
             headers: {
                 'authorization': `Bearer ${token}`,
                 // 'content-type': 'application/json'

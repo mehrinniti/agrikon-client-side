@@ -13,7 +13,7 @@ const AddProduct = () => {
 
     const { register, handleSubmit, reset, formState: { errors }, } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/products', data)
+        axios.post('https://dry-earth-68796.herokuapp.com/products', data)
             .then(res => {
                 // console.log(res);
                 if (res.data?.insertedId) {

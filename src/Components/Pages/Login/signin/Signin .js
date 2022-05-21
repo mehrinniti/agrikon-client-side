@@ -119,7 +119,7 @@ const Signin = () => {
         const user = { userEmail, displayName };
         console.log('displayName : ', displayName);
         console.log('userEmail : ', userEmail);
-        fetch('http://localhost:5000/users', {
+        fetch('https://dry-earth-68796.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
