@@ -1,7 +1,7 @@
 <img src="https://i.ibb.co/74BqhhW/Footer-logo-27bff488-svg.png" alt="" />
 <h1>Agrikon Agricultural Website (Client side)</h1>
 
-<h4>MERN Stack Project</h4>
+<h3>MERN Stack Project</h3>
 <a href="https://agrikon-agricultural-website.netlify.app/" target="_blank" rel="noopener noreferrer">Visit our website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 <a href="https://github.com/mehrinniti/agrikon-server" target="_blank" rel="noopener noreferrer">Server side code</a>
 
