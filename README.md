@@ -1,8 +1,8 @@
 <img src="https://i.ibb.co/74BqhhW/Footer-logo-27bff488-svg.png" alt="" />
 <h1>Agrikon Agricultural Website (Client side)</h1>
 
-<h2>MERN Stack Project</h2>
-<a href="https://agrikon-agricultural-website.netlify.app/" target="_blank" rel="noopener noreferrer">Visit our website</a>
+<h4>MERN Stack Project</h4>
+<a href="https://agrikon-agricultural-website.netlify.app/" target="_blank" rel="noopener noreferrer">Visit our website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 <a href="https://github.com/mehrinniti/agrikon-server" target="_blank" rel="noopener noreferrer">Server side code</a>
 
 <br/>
@@ -20,7 +20,7 @@
 <p>JSX, CSS, Bootstrap, Material UI, AOS-Animate, JS, React js, Node js,  Es6, React Router v5, React Hook Form, Axios, SweetAlert, Swiper, React-typed, Firebase, Heroku, MongoDB, Express, Strip.</p>
 
 <h2>Author -</h2>
-<a href="https://github.com/mehrinniti" target="_blank" rel="noopener noreferrer"><h4>Sayma Sultana</h4></a>
+<a href="https://github.com/mehrinniti" target="_blank" rel="noopener noreferrer">Sayma Sultana</a>
 
 
 
