@@ -20,7 +20,7 @@
 <p>JSX, CSS, Bootstrap, Material UI, AOS-Animate, JS, React js, Node js,  Es6, React Router v5, React Hook Form, Axios, SweetAlert, Swiper, React-typed, Firebase, Heroku, MongoDB, Express, Strip.</p>
 
 <h2>Author -</h2>
-<a href="https://github.com/mehrinniti" target="_blank" rel="noopener noreferrer">Sayma Sultana</a>
+<a href="https://github.com/mehrinniti" target="_blank" rel="noopener noreferrer">Sayma Sultana Niti</a>
 
 
 
